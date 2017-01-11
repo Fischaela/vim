@@ -27,9 +27,6 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" Colored column to avoid going to far to the right
-set colorcolumn=90
-
 " Show trailing spaces and highlight hard tabs
 set list listchars=tab:»·,trail:·
 
@@ -64,3 +61,13 @@ au FileType make set noexpandtab
 
 " Add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
+
+" Nerdtree settings
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Hit the right arrow to open a node
+let NERDTreeMapActivateNode='<right>'
+" Display hidden files
+let NERDTreeShowHidden=1
+" Do not display some useless files in the tree
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
