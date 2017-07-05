@@ -11,6 +11,3 @@
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 
-[submodule "bundle/bundle/syntastic"]
-	path = bundle/bundle/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
