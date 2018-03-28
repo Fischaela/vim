@@ -72,3 +72,6 @@ let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 " Do not display some useless files in the tree
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+" Get rid of pipe in split view separator
+set fillchars+=vert:\ 
